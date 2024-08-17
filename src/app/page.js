@@ -1,23 +1,121 @@
 import Image from "next/image";
 
-
 export default function Home() {
   return (
-    <div className="bg-white">
-
-    <div className="  text-white-600 font-bold bg-blue-400 rounded p-2 m-5 " >
-      <div><div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-        <div className="shrink-0">
-          <Image className="h-12 w-12" src="/prof.png" width={900} height={500} alt="ChitChat Logo" />
-          <img src="https://github.com/lanzkrish/tarutra/assets/73235813/07584a9b-51f5-49c4-91c9-8edc486611eb"/>
-        </div>
+    <div className="bg-red-100">
+      <div className="  text-white-600 font-bold rounded py-2 mx-3 ">
         <div>
-          <div className="text-xl font-medium text-black">Dhananjay</div>
-          <p className="text-slate-500">You have a new message!</p>
+          <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+            <div className="shrink-0">
+              <Image
+                className="h-12 w-12"
+                src="/prof.png"
+                width={900}
+                height={500}
+                alt="ChitChat Logo"
+              />
+             
+            </div>
+            <div>
+              <div className="text-xl font-medium text-black">Dhananjay</div>
+              {/* <p className="text-slate-500">You have a new message!</p> */}
+            </div>
+          </div>
         </div>
-      </div></div>
-    </div>
+      </div>
 
-    </div >
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+          Customers also purchased
+        </h2>
+
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          <div className="group relative">
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <img
+                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                alt="Front of men&#039;s Basic Tee in black."
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" className="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">Black</p>
+              </div>
+              <p className="text-sm font-medium text-gray-900">$35</p>
+            </div>
+          </div>
+          <div className="group relative">
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <img
+                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg"
+                alt="Front of men&#039;s Basic Tee in black."
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" className="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">Black</p>
+              </div>
+              <p className="text-sm font-medium text-gray-900">$35</p>
+            </div>
+          </div>
+          <div className="group relative">
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <img
+                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg"
+                alt="Front of men&#039;s Basic Tee in black."
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" className="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">Black</p>
+              </div>
+              <p className="text-sm font-medium text-gray-900">$35</p>
+            </div>
+          </div>
+          <div className="group relative">
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <img
+                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg"
+                alt="Front of men&#039;s Basic Tee in black."
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <a href="#">
+                    <span aria-hidden="true" className="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">Black</p>
+              </div>
+              <p className="text-sm font-medium text-gray-900">$35</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
