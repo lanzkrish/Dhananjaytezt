@@ -81,7 +81,7 @@ export default function Footer() {
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center dark:text-gray-600">© 1968 Company Co. All rights reserved.</div>
+	<div className="py-6 text-sm text-center dark:text-gray-600">© 2024 Trixtern Tech. All rights reserved.</div>
 </footer>
             </div >
     )

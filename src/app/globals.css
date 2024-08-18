@@ -8,6 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+:root{
+  --primary-color: #7b65fa;
+  --secondary-color: #B8B8FF;
+  --background-color: #F8F7FF;
+  --primary1-color: #FFD8BE;
+  --secondary1-color: #FFEEDD;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
