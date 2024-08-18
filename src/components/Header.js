@@ -11,7 +11,7 @@ export default function Header() {
         {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt=""/> */}
         <img src="https://dsahoo.netlify.app/Assets/profile/profile-2.jpg" 
                alt="Front of men&#039;s Basic Tee in black."
-               className="h-full w-full object-cover object-center h-9 w-9"
+               className=" object-cover object-center h-9 w-9"
                />
       </a>
     </div>
