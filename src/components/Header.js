@@ -6,8 +6,8 @@ export default function Header() {
             <header className="">
   <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div className="flex lg:flex-1">
-      <a href="#" className="-m-1.5 p-1.5">
-        <span className="sr-only">Your Company</span>
+      <a href="./app" className="-m-1.5 p-1.5">
+        <span className="sr-only">Trixtern</span>
         {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt=""/> */}
         <img src="https://github.com/user-attachments/assets/1d7cf27c-ca0a-4178-8c55-5f1cbb812a58" 
                alt="Front of men&#039;s Basic Tee in black."
@@ -25,12 +25,14 @@ export default function Header() {
     </div>
     <div className="hidden lg:flex lg:gap-x-12">
       <div className="relative">
-        <button type="button" className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
-          Product
+      <a href="/products">
+      <button type="button" className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+          Products
           <svg className="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
           </svg>
         </button>
+        </a>
 
     
         {/* <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
