@@ -438,9 +438,9 @@ function productDetails({params , searchParams}) {
              <div className="columns-4  flex py-2">
 
              <div className="w-1/12 me-3 p-4">
-             {filteredProduct.imgSrcs?.map((src )=>(
-              <div className="border p-1 mb-1" onClick={() => onImgchange(src)} >
-                <img src={src} key={src} width='auto' className=" m-auto p-1 mb-1" style={{height: "80px"}} ></img>
+             {filteredProduct.imgSrcs?.map((src,i )=>(
+              <div className="border p-1 mb-1" onClick={() => onImgchange(src)} key={`${src}${i}`}>
+                <img src={src} width='auto' className=" m-auto p-1 mb-1" style={{height: "80px"}} ></img>
               </div>
 
              ))}
@@ -453,7 +453,7 @@ function productDetails({params , searchParams}) {
              <h1 className=" text-xl">{filteredProduct.name}</h1>
              <ul className="text-sm text-start ms-7 mt-4 list-disc">
                {filteredProduct.specification.map((spec, j) => (
-                     <li>{spec}</li>
+                     <li key={j} >{spec}</li>
                ))}
              </ul>
              </div>

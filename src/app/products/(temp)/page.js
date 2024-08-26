@@ -439,15 +439,15 @@ export default function Products() {
       </div> */}
       <div className="container border bg-white p-2 text-black">
            {products.map((product, index) => (
-             <div className="columns-3  flex py-2 border-b-2">
+             <div className="columns-3  flex py-2 border-b-2" key={product.id}>
              <div className="w-3/12 me-3">
-             <img src={product.imgSrc}/>
+             <img  src={product.imgSrc}/>
              </div>
              <div className="w-6/12">
              <h1 className=" text-xl"><Link href={`/products/product-details/${product.id}`}>{product.name}</Link></h1>
              <ul className="text-sm text-start ms-7 mt-4 list-disc">
                {product.specification.map((spec, j) => (
-                     <li>{spec}</li>
+                     <li key={j}>{spec}</li>
                ))}
              </ul>
              </div>
