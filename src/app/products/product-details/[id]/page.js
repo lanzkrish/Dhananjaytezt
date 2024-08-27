@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-function productDetails({params , searchParams}) {
+function ProductDetails({params , searchParams}) {
     // const {params : {productInfo}} = props;
 
     // console.log(productInfo,'b');
@@ -448,8 +448,9 @@ function productDetails({params , searchParams}) {
       },
   
     ];
-
+    const[count,setCount] = useState(0);
     const productId = params.id;
+
     const filteredProduct = products.find( product => product.id ==productId);
     console.log(filteredProduct);
 
@@ -462,14 +463,20 @@ function productDetails({params , searchParams}) {
     
     return(
         <div className="bg-white m-2">
+          <div>
+              <p>You clicked {count} times</p>
+              <button onClick={() =>setCount(count+1)}>
+                Click
+              </button>
+            </div>
            <div className="container  bg-white p-2 text-black">
 
              <div className="columns-4  flex py-2">
 
              <div className="w-1/12 me-3 p-4">
              {filteredProduct.imgSrcs?.map((src,i )=>(
-              <div className="border p-1 mb-1" onClick={() => onImgchange(src)} key={`${src}${i}`}>
-                <img src={src} width='auto' className=" m-auto p-1 mb-1" style={{height: "80px"}} ></img>
+              <div className="border p-1 mb-1" key={`${src}${i}`}>
+                <img src={src} width='auto' className=" m-auto p-1 mb-1" style={{height: "80px"}} onClick={() => onImgchange(src)}  ></img>
               </div>
 
              ))}
@@ -498,4 +505,4 @@ function productDetails({params , searchParams}) {
     )
 }
 
-export default productDetails;
+export default ProductDetails;
