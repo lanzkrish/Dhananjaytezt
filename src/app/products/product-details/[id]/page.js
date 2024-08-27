@@ -1,4 +1,6 @@
 "use client"
+import Image from "next/image";
+import { useState } from "react";
 
 function productDetails({params , searchParams}) {
     // const {params : {productInfo}} = props;
@@ -451,10 +453,11 @@ function productDetails({params , searchParams}) {
     const filteredProduct = products.find( product => product.id ==productId);
     console.log(filteredProduct);
 
-    let selectedImg = filteredProduct.imgSrc;
+    let selectImg = filteredProduct.imgSrc;
+    const[selectedImg, setSelectedImg] = useState(selectImg)
     const onImgchange = (imgSrc) =>{
       console.log(imgSrc);
-      selectedImg = imgSrc;
+      setSelectedImg(imgSrc);
     }
     
     return(
