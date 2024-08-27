@@ -448,7 +448,7 @@ function ProductDetails({params , searchParams}) {
       },
   
     ];
-    const[count,setCount] = useState(0);
+
     const productId = params.id;
 
     const filteredProduct = products.find( product => product.id ==productId);
@@ -463,12 +463,6 @@ function ProductDetails({params , searchParams}) {
     
     return(
         <div className="bg-white m-2">
-          <div>
-              <p>You clicked {count} times</p>
-              <button onClick={() =>setCount(count+1)}>
-                Click
-              </button>
-            </div>
            <div className="container  bg-white p-2 text-black">
 
              <div className="columns-4  flex py-2">

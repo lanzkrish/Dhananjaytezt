@@ -1,10 +1,9 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+
 
 
 export default function Home() {
-  const[count,setCount] = useState(0);
   return (
     <div className="">
      <div>
@@ -18,12 +17,6 @@ export default function Home() {
       <div className="bg-slate-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <div>
-              <p>You clicked {count} times</p>
-              <button onClick={() =>setCount(count+1)}>
-                Click
-              </button>
-            </div>
             <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
 
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
