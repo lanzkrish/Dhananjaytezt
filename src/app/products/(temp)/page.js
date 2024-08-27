@@ -5,6 +5,32 @@ export default function Products() {
 
   const products =[
     {
+      id:0,
+        name:'SAMSUNG Galaxy S23 FE (Mint, 128 GB)',
+        price: 33999,
+        rating:4.3,
+        specification:[
+          '8 GB RAM | 128 GB ROM',
+          '16.26 cm (6.4 inch) Full HD+ Display',
+          '50MP + 12MP | 10MP Front Camera',
+          '4500 mAh Battery',
+          'Samsung Exynos 2200 Processor'
+  
+        ],
+        imgSrc:'https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/z/q/0/-original-imahyhm6uug8hf2r.jpeg?q=70&crop=false',
+        brand:'samsung',
+        os:'android',
+        category:'mobile',
+        imgSrcs:[
+          'https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/z/q/0/-original-imahyhm6uug8hf2r.jpeg?q=70&crop=false',
+          'https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/r/v/d/-original-imahyhm6tuhxqhfu.jpeg?q=70&crop=false',
+          'https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/8/3/x/-original-imagzm8pagefz9z4.jpeg?q=70&crop=false',
+          'https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/5/k/u/-original-imahyhm6qbjxrnuk.jpeg?q=70&crop=false',
+          'https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/g/s/z/-original-imahyhm6xghgyzaf.jpeg?q=70&crop=false',
+          'https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/8/j/k/-original-imahyhm6pmzgzxg8.jpeg?q=70&crop=false'
+        ]
+    },
+    {
       id:1,
       name:'Apple iPhone 12 (Blue, 64 GB)',
       price: 37999,
