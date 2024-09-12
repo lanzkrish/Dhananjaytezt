@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function ProductDetails({params , searchParams}) {
     // const {params : {productInfo}} = props;
@@ -452,7 +452,7 @@ function ProductDetails({params , searchParams}) {
     const productId = params.id;
 
     const filteredProduct = products.find( product => product.id ==productId);
-    console.log(filteredProduct);
+    // console.log(filteredProduct);
 
     let selectImg = filteredProduct.imgSrc;
     const[selectedImg, setSelectedImg] = useState(selectImg)
@@ -460,6 +460,9 @@ function ProductDetails({params , searchParams}) {
       console.log(imgSrc);
       setSelectedImg(imgSrc);
     }
+    useEffect(()=>{
+        console.log("useEffect in use")
+    },[selectedImg]);
     
     return(
         <div className="bg-white m-2">
@@ -470,14 +473,14 @@ function ProductDetails({params , searchParams}) {
              <div className="w-1/12 me-3 p-4">
              {filteredProduct.imgSrcs?.map((src,i )=>(
               <div className="border p-1 mb-1" key={`${src}${i}`}>
-                <img src={src} width='auto' className=" m-auto p-1 mb-1" style={{height: "80px"}} onClick={() => onImgchange(src)}  ></img>
+                <img src={src} width='auto' className=" m-auto p-1 mb-1" style={{width: "80px"}} onClick={() => onImgchange(src)}  ></img>
               </div>
 
              ))}
              
              </div>
              <div className="w-full md:w-3/12 me-3 border-e-2">
-             <img src={selectedImg} width='220px' className="m-auto ps-4"/>
+             <img src={selectedImg} width='320px' className="m-auto ps-4"/>
              </div>
              <div className="w-6/12">
              <h1 className=" text-xl">{filteredProduct.name}</h1>
